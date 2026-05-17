@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" fill="none">
+<rect width="640" height="420" rx="28" fill="#FFFFFF"/>
+<rect x="34" y="34" width="572" height="352" rx="22" fill="#F1F9EC" stroke="#DDEBD8" stroke-width="2"/>
+<circle cx="116" cy="118" r="34" fill="#A7D129"/>
+<rect x="174" y="92" width="252" height="18" rx="9" fill="#2F7D32"/>
+<rect x="174" y="126" width="332" height="14" rx="7" fill="#AFC9A8"/>
+<rect x="80" y="200" width="200" height="128" rx="20" fill="#FFFFFF"/>
+<rect x="310" y="200" width="250" height="128" rx="20" fill="#FFFFFF"/>
+<path d="M106 292l44-44 37 33 49-61" stroke="#2F7D32" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="340" y="230" width="176" height="18" rx="9" fill="#A7D129"/>
+<rect x="340" y="264" width="132" height="14" rx="7" fill="#AFC9A8"/>
+<text x="320" y="374" text-anchor="middle" font-family="Inter, Arial" font-size="18" font-weight="800" fill="#17301F">Replace with testing photo / screenshot</text>
+</svg>
