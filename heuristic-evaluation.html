@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heuristic Evaluation | Fit-Balance Web Report</title>
+  <meta name="description" content="Static web reporting site for the Fit-Balance HCI2 final project usability evaluation." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Fit-Balance home">
+      <img src="assets/2F91D74A.png" alt="Fit-Balance logo" />
+      <span>Fit-Balance</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="nav-link " href="index.html">Home</a>
+<a class="nav-link " href="data-gathering.html">Data Gathering</a>
+<a class="nav-link active" href="heuristic-evaluation.html">Heuristic Evaluation</a>
+<a class="nav-link " href="usability-testing.html">Usability Testing</a>
+<a class="nav-link " href="results.html">Results</a>
+<a class="nav-link " href="recommendations.html">Recommendations</a>
+<a class="nav-link " href="walkthrough.html">Walkthrough</a>
+    </nav>
+  </header>
+
+  <main>
+    
+<section class="page-hero reveal">
+  <span class="eyebrow">Heuristic Evaluation</span>
+  <h1>Findings based on usability heuristics</h1>
+  <p>This page summarizes the main usability issues identified while evaluating the Fit-Balance screens, especially the goal screen and workout flow.</p>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading split">
+    <div><span class="eyebrow">Evaluation Workbook</span><h2>Checklist and evidence</h2></div>
+    <a class="btn secondary" href="docs/heuristic-evaluation-workbook.pdf">Attach Workbook PDF</a>
+  </div>
+  <div class="feature-grid three">
+    <article class="feature-card"><span class="icon-badge">🔎</span><h3>Screen Review</h3><p>Login, dashboard, goal-setting, workout, nutrition, progress, and profile screens were checked for usability concerns.</p></article>
+    <article class="feature-card"><span class="icon-badge">📌</span><h3>Issue Tagging</h3><p>Each issue is linked to a usability principle, severity level, and recommended improvement.</p></article>
+    <article class="feature-card"><span class="icon-badge">🛠️</span><h3>Design Action</h3><p>Identified problems were translated into prototype revisions such as clearer options, feedback, and navigation controls.</p></article>
+  </div>
+</section>
+
+<section class="section muted reveal">
+  <div class="section-heading">
+    <span class="eyebrow">Main Findings</span>
+    <h2>Heuristic evaluation results</h2>
+    <p>Use the filter to focus on high, medium, or low priority issues.</p>
+  </div>
+  <div class="filter-bar" role="group" aria-label="Filter issues by priority">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="high">High</button>
+    <button class="filter-btn" data-filter="medium">Medium</button>
+    <button class="filter-btn" data-filter="low">Low</button>
+  </div>
+  <div class="table-wrap">
+    <table id="issuesTable">
+      <thead>
+        <tr><th>Screen/Area</th><th>Issue Identified</th><th>Related Heuristic</th><th>Priority</th><th>Recommendation</th></tr>
+      </thead>
+      <tbody>
+        <tr data-priority="high"><td>Goal Screen</td><td>Users may need clearer guidance when choosing between fitness goals.</td><td>Match between system and real world</td><td><span class="priority high">High</span></td><td>Use familiar goal labels and short descriptions for Muscle Gain, Fat Loss, Push/Pull, and Full-Body routines.</td></tr>
+        <tr data-priority="high"><td>Workout Screen</td><td>The flow needs stronger user control when reviewing or changing workout selections.</td><td>User control and freedom</td><td><span class="priority high">High</span></td><td>Add Back, Edit, Cancel, and confirmation actions so users can recover from wrong choices.</td></tr>
+        <tr data-priority="medium"><td>Dashboard</td><td>Progress and current goal may not be immediately visible.</td><td>Visibility of system status</td><td><span class="priority medium">Medium</span></td><td>Show goal status, calorie target, and workout progress using clear summary cards.</td></tr>
+        <tr data-priority="medium"><td>Nutrition Tracking</td><td>Users may be unsure if food or calorie entries were saved successfully.</td><td>Visibility of system status</td><td><span class="priority medium">Medium</span></td><td>Add confirmation messages such as “Meal added” or “Calories updated.”</td></tr>
+        <tr data-priority="medium"><td>Forms/Input</td><td>There may be limited prevention for invalid or incomplete fitness data.</td><td>Error prevention</td><td><span class="priority medium">Medium</span></td><td>Use required fields, helper text, and input limits for age, weight, height, and calorie values.</td></tr>
+        <tr data-priority="low"><td>Visual Design</td><td>Some sections may feel visually heavy if cards and spacing are inconsistent.</td><td>Aesthetic and minimalist design</td><td><span class="priority low">Low</span></td><td>Standardize spacing, typography, icons, and button styles across all screens.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <span class="eyebrow">Applied Improvements</span>
+    <h2>Prototype revisions after evaluation</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item"><span>✓</span><div><h3>Goal Screen Added</h3><p>A dedicated goal screen was added to support clearer goal selection and guide users toward suitable workout paths.</p></div></div>
+    <div class="timeline-item"><span>✓</span><div><h3>Workout Screen Reviewed</h3><p>The workout screens were evaluated and refined to improve user control, freedom, and clarity during routine selection.</p></div></div>
+    <div class="timeline-item"><span>✓</span><div><h3>Navigation and Feedback Improved</h3><p>Recommendations focused on making the interface more understandable through clearer labels, visual feedback, and consistent actions.</p></div></div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Fit-Balance Web Reporting Site</strong>
+      <p>HCI2 – Human-Computer Interaction | Static website documentation for heuristic evaluation and usability testing.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.figma.com/design/ScqtvXX6bU2nM9fGsMo0DM/Fit-Balance?node-id=2537-1822&t=quCPDVbNzdlAVR3Q-1" target="_blank" rel="noreferrer">Open Prototype</a>
+      <a href="docs/README.txt" target="_blank">Documents Folder</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

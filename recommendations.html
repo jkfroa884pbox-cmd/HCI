@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recommendations | Fit-Balance Web Report</title>
+  <meta name="description" content="Static web reporting site for the Fit-Balance HCI2 final project usability evaluation." />
+  <link rel="icon" href="assets/2F91D74A.png" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Fit-Balance home">
+      <img src="assets/2F91D74A.png" alt="Fit-Balance logo" />
+      <span>Fit-Balance</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="nav-link " href="index.html">Home</a>
+<a class="nav-link " href="data-gathering.html">Data Gathering</a>
+<a class="nav-link " href="heuristic-evaluation.html">Heuristic Evaluation</a>
+<a class="nav-link " href="usability-testing.html">Usability Testing</a>
+<a class="nav-link " href="results.html">Results</a>
+<a class="nav-link active" href="recommendations.html">Recommendations</a>
+<a class="nav-link " href="walkthrough.html">Walkthrough</a>
+    </nav>
+  </header>
+
+  <main>
+    
+<section class="page-hero reveal">
+  <span class="eyebrow">Recommendations</span>
+  <h1>Design improvements for Fit-Balance</h1>
+  <p>The recommendations below are based on the heuristic findings and are organized by priority so the team can decide what to refine first.</p>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <span class="eyebrow">Priority Fixes</span>
+    <h2>Recommended design actions</h2>
+  </div>
+  <div class="recommendation-list">
+    <article class="recommendation-card high"><span>High Priority</span><h3>Strengthen user control in workout screens</h3><p>Add Back, Edit, Cancel, and confirmation options so users can correct choices without restarting the entire flow.</p></article>
+    <article class="recommendation-card high"><span>High Priority</span><h3>Improve goal selection clarity</h3><p>Keep the goal screen simple, with short descriptions and clear visual differences between Muscle Gain, Fat Loss, Push/Pull, and Full-Body options.</p></article>
+    <article class="recommendation-card medium"><span>Medium Priority</span><h3>Add feedback and status messages</h3><p>Use messages such as “Goal saved,” “Workout selected,” or “Meal added” to reassure users that an action was successful.</p></article>
+    <article class="recommendation-card medium"><span>Medium Priority</span><h3>Standardize visual hierarchy</h3><p>Use consistent button colors, card spacing, icons, and text sizes across the dashboard, workout, and nutrition pages.</p></article>
+    <article class="recommendation-card low"><span>Low Priority</span><h3>Prepare accessibility refinements</h3><p>Check color contrast, readable text size, touch-friendly button dimensions, and simple labels for mobile use.</p></article>
+  </div>
+</section>
+
+<section class="section muted reveal">
+  <div class="section-heading split">
+    <div><span class="eyebrow">Before and After</span><h2>Suggested design improvement table</h2></div>
+    <p>Use this to explain changes clearly in your report.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Area</th><th>Before</th><th>After / Suggested Improvement</th><th>Expected Usability Benefit</th></tr></thead>
+      <tbody>
+        <tr><td>Goal Screen</td><td>Goal options may lack enough guidance.</td><td>Add dedicated cards with labels and short descriptions.</td><td>Improves recognition and decision-making.</td></tr>
+        <tr><td>Workout Screen</td><td>Users may have limited freedom to go back or change choices.</td><td>Add clear navigation controls and recovery actions.</td><td>Improves user control and reduces frustration.</td></tr>
+        <tr><td>Dashboard</td><td>Progress and current goal may not be immediately visible.</td><td>Add summary cards for goal, calories, and workout progress.</td><td>Improves visibility of system status.</td></tr>
+        <tr><td>Nutrition Input</td><td>Saving or updating entries may not feel confirmed.</td><td>Add success and validation messages.</td><td>Improves feedback and error prevention.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <span class="eyebrow">Conclusion</span>
+    <h2>Overall evaluation conclusion</h2>
+  </div>
+  <div class="article-card">
+    <p>The Fit-Balance prototype shows strong potential as an integrated fitness and nutrition management system because it focuses on meaningful user needs such as setting goals, organizing workouts, and tracking calorie-related progress. The heuristic evaluation helped identify specific areas that affect usability, especially the need for clearer guidance, consistent feedback, and stronger user control.</p>
+    <p>After applying the recommendations, the prototype is now more prepared for usability testing with actual respondents. The next step is to collect SUS scores and open-ended feedback, compare the results with the heuristic findings, and continue refining the prototype based on user-centered evidence.</p>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Fit-Balance Web Reporting Site</strong>
+      <p>HCI2 – Human-Computer Interaction | Static website documentation for heuristic evaluation and usability testing.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.figma.com/design/ScqtvXX6bU2nM9fGsMo0DM/Fit-Balance?node-id=2537-1822&t=quCPDVbNzdlAVR3Q-1" target="_blank" rel="noreferrer">Open Prototype</a>
+      <a href="docs/README.txt" target="_blank">Documents Folder</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

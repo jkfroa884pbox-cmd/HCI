@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usability Testing | Fit-Balance Web Report</title>
+  <meta name="description" content="Static web reporting site for the Fit-Balance HCI2 final project usability evaluation." />
+  <link rel="icon" href="assets/2F91D74A.png" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Fit-Balance home">
+      <img src="assets/2F91D74A.png" alt="Fit-Balance logo" />
+      <span>Fit-Balance</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="nav-link " href="index.html">Home</a>
+<a class="nav-link " href="data-gathering.html">Data Gathering</a>
+<a class="nav-link " href="heuristic-evaluation.html">Heuristic Evaluation</a>
+<a class="nav-link active" href="usability-testing.html">Usability Testing</a>
+<a class="nav-link " href="results.html">Results</a>
+<a class="nav-link " href="recommendations.html">Recommendations</a>
+<a class="nav-link " href="walkthrough.html">Walkthrough</a>
+    </nav>
+  </header>
+
+  <main>
+    
+<section class="page-hero reveal">
+  <span class="eyebrow">Usability Testing</span>
+  <h1>Testing plan with actual respondents</h1>
+  <p>After applying recommendations from the heuristic evaluation, the improved Fit-Balance prototype is prepared for usability testing using task-based review, SUS, and open-ended feedback.</p>
+</section>
+
+<section class="section reveal">
+  <div class="stat-grid">
+    <article class="stat-card"><span>Method</span><strong>Task-Based Test</strong><p>Respondents explore key screens and complete simple prototype tasks.</p></article>
+    <article class="stat-card"><span>Instrument</span><strong>SUS + Feedback</strong><p>Quantitative ratings are supported by qualitative comments.</p></article>
+    <article class="stat-card"><span>Duration</span><strong>10–15 mins</strong><p>Short session designed to avoid respondent fatigue.</p></article>
+  </div>
+</section>
+
+<section class="section muted reveal">
+  <div class="section-heading">
+    <span class="eyebrow">Testing Flow</span>
+    <h2>Step-by-step usability testing procedure</h2>
+  </div>
+  <div class="process-grid">
+    <article><span>1</span><h3>Orientation</h3><p>Briefly explain the purpose of the evaluation and clarify that the prototype, not the respondent, is being tested.</p></article>
+    <article><span>2</span><h3>Consent</h3><p>Provide the consent form and explain voluntary participation, confidentiality, and estimated session time.</p></article>
+    <article><span>3</span><h3>Task Performance</h3><p>Ask respondents to explore the dashboard, choose a goal, review workouts, and inspect nutrition-related features.</p></article>
+    <article><span>4</span><h3>Survey</h3><p>Let respondents answer the SUS questionnaire and open-ended feedback questions.</p></article>
+    <article><span>5</span><h3>Documentation</h3><p>Collect screenshots, photos, forms, and notes that can be included as evidence in the web report.</p></article>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading split">
+    <div><span class="eyebrow">SUS Instrument</span><h2>System Usability Scale items</h2></div>
+    <a class="btn secondary" href="docs/sus-questionnaire.pdf">Attach SUS PDF</a>
+  </div>
+  <div class="sus-list">
+    <ol>
+      <li>I think that I would like to use this system frequently.</li>
+      <li>I found the system unnecessarily complex.</li>
+      <li>I thought the system was easy to use.</li>
+      <li>I think that I would need the support of a technical person to be able to use this system.</li>
+      <li>I found the various functions in this system were well integrated.</li>
+      <li>I thought there was too much inconsistency in this system.</li>
+      <li>I would imagine that most people would learn to use this system very quickly.</li>
+      <li>I found the system very cumbersome to use.</li>
+      <li>I felt very confident using the system.</li>
+      <li>I needed to learn a lot of things before I could get going with this system.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-heading">
+    <span class="eyebrow">Open-Ended Questions</span>
+    <h2>Qualitative feedback prompts</h2>
+  </div>
+  <div class="feature-grid two">
+    <article class="feature-card"><h3>What part of Fit-Balance was easiest to understand?</h3><p>Identifies interface strengths and features that should be preserved.</p></article>
+    <article class="feature-card"><h3>What part felt confusing or difficult?</h3><p>Reveals navigation, wording, layout, or interaction problems.</p></article>
+    <article class="feature-card"><h3>What improvement would make the system more useful?</h3><p>Collects user-centered suggestions for design refinements.</p></article>
+    <article class="feature-card"><h3>Would you use this for fitness/nutrition management? Why?</h3><p>Checks perceived usefulness and user acceptance.</p></article>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Fit-Balance Web Reporting Site</strong>
+      <p>HCI2 – Human-Computer Interaction | Static website documentation for heuristic evaluation and usability testing.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.figma.com/design/ScqtvXX6bU2nM9fGsMo0DM/Fit-Balance?node-id=2537-1822&t=quCPDVbNzdlAVR3Q-1" target="_blank" rel="noreferrer">Open Prototype</a>
+      <a href="docs/README.txt" target="_blank">Documents Folder</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
